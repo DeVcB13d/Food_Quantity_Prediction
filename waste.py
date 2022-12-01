@@ -1,15 +1,14 @@
 import csv
 import random as rd
+import pandas as pd
 
-# opening the CSV file
-with open('foodCsv.csv', mode ='r')as file:
-# reading the CSV file
-    csvFile = csv.reader(file)
+# reading the csv file
+df = pd.read_csv("fd.csv")
 
-# displaying the contents of the CSV file
-    for lines in csvFile:
-        value=lines[1]
-        amount=lines[2]
-        print(value)
-        if(value>=250 and value<270):
-            temp=rd.randrange((amount/10),(amount/5))
+# updating the column value/data
+df. set_value[1, 'A',200]
+
+# writing into the file
+df.to_csv("AllDetails.csv", index=False)
+
+      
