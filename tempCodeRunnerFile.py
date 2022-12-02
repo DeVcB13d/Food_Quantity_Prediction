@@ -1,2 +1,2 @@
-if(int(value)>=250 and int(value)<=270):
-        #     temp_waste = rd.randrange()
+sidepanelHeading= customtkinter.CTkLabel(master=sidepanel,font=("Times New Roman",14,"bold"),text="UPDATE PANEL",width=20,fg_color=("white", "gray38"),corner_radius=6)  
+# sidepanelHeading.grid(row=1, column=0, pady=10, padx=20,sticky='we')
